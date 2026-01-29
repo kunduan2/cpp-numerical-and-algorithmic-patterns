@@ -6,6 +6,7 @@
  *   and experimentation. Current implementations include:
  *     - Recursive sum of the emements of a vector
  *     - Factorial
+       - Power of an integer
  
  * Status:
  *   Actively evolving. New recursive examples and refinements will be added
@@ -58,5 +59,15 @@ long long fibonacci (int n){
     else if (n<=1) return 1;
     else{
         return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
+
+// Calculate Power of an integer
+int pow(int a, int n){
+    if(n==0){
+        return 1;
+    }
+    else{
+        return a*pow(a, n-1);
     }
 }
