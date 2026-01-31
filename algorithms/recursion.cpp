@@ -71,3 +71,20 @@ int pow(int a, int n){
         return a*pow(a, n-1);
     }
 }
+
+
+/*
+Problem Statement:
+------------------
+Write a recursive function to count the number of items in a list (vector).
+
+Example Usage:
+vector<int> v = {3, 7, 1, 9};
+cout << count_elements(v) << endl;  
+*/
+
+int count_elements(vector<int>& vec, int i=0){
+    printf(" f(%d)\n", i); // check how recursion is working
+    if (i==vec.size()){return 0;}
+    return 1 + count_elements(vec, i+1);
+}
