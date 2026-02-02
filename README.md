@@ -35,8 +35,31 @@ Existing files may be refactored as understanding deepens.
 
 ```text
 .
-├── fundamentals/     # Core C++ language concepts
-├── algorithms/       # Classical algorithms and patterns
-├── numerical/        # Numerical methods and linear algebra
-├── modern_cpp/       # Modern C++ design and idioms
-└── README.md
+├── fundamentals/              # Core C++ language concepts
+├── algorithms/                # Classical algorithms
+│   ├── divide_and_conquer/    # Divide-and-conquer paradigm
+│   │   ├── README.md
+│   │   ├── binary_search.cpp
+│   │   └── power.cpp
+│   │
+│   ├── sorting/               # Sorting algorithms
+│   │   ├── README.md
+│   │   ├── merge_sort.cpp
+│   │   └── quick_sort.cpp
+│   │
+│   ├── dynamic_programming/   # DP algorithms (to be added)
+│   │   └── README.md
+│   │
+│   ├── greedy/                # Greedy algorithms (to be added)
+│   │   └── README.md
+│   │
+│   └── graph/                 # Graph algorithms (to be added)
+│       └── README.md
+├── numerical/                 # Numerical methods and linear algebra
+│   ├── spin_precession_rk4.cpp
+│   └── spin_precession_rk4.dat
+├── analysis/                  # Data processing and visualization
+│   └── plot_spin_precession.py
+├── modern_cpp/                # Modern C++ design patterns and idioms
+└── README.md                  # Project overview and build instructions
+
