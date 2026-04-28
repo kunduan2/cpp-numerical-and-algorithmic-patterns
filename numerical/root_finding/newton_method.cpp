@@ -36,10 +36,11 @@ double solvefx(double& initial_guess, double& tol, double delx){
     int count = 0;
 
     // Iterate until f(x) is within tolerance
-    while(func(x)>tol && count<20){
-        count++;
+    while(abs(func(x))>tol && count<20){
         x += -func(x)/f1x(x, delx); // Newton update step
         // cout << count << " " << x << "\n";
+
+        count++;
     }
     return x;
 }
