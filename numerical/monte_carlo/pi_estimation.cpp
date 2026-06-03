@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int N = 100;
+const int N = 1000;
 int count = 0;
 
 int main(){
@@ -23,7 +23,7 @@ int main(){
     - std::uniform_int_distribution<int> :    A C++ standard library class that generates integers.
     - “uniform” means every value has equal probability.
     - <int> means the output type will be int.
-    - other dists:     std::uniform_int_distribution<int> dist(1, 10);
+    - other dists: std::uniform_int_distribution<int> dist(1, 10);
     */
 
     for (int i=0; i<N; i++){
